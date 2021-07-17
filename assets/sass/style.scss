@@ -3,7 +3,7 @@
     margin:0;
 }
 body {
-    background-color: #ffb01d;
+    background-color: #fc9004;
     font-family: Arial, Helvetica, sans-serif;
 }
 #app {
@@ -13,6 +13,7 @@ body {
     img {
         width: 40%;
         margin-top: 1.5rem;
+        filter: drop-shadow(2px 5px 7px rgb(163, 131, 25));
     }
     input{
         padding: 0.5rem;
@@ -25,9 +26,10 @@ body {
         border: none;
         width: 150px;
         margin-top: 1rem;
-        background-color: rgb(133, 209, 196);
+        background-color: rgb(249, 252, 90);
         font-size: 1rem;
         font-weight: bold;
+        color: #013801;
     }
     #winner {
         margin-top: 1rem;

@@ -11,8 +11,14 @@ let app = new Vue ({
         sort:function(){
             winner = this.lista[Math.floor(Math.random() * this.lista.length)]
 
+            document.querySelector('#winner').innerHTML = 'Sorteando...'
+
+            setTimeout(function(){
+                document.querySelector('#winner').style.color = '#013801'
+
+                document.querySelector('#winner').innerHTML = `Parabéns <strong>${winner}</strong>`
+            },1500)
             
-            document.querySelector('#winner').innerHTML = `Parabéns <strong>${winner}</strong>`
         }
     },
 })
