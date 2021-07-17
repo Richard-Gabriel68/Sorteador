@@ -14,7 +14,7 @@ let app = new Vue ({
             document.querySelector('#winner').innerHTML = 'Sorteando...'
 
             setTimeout(function(){
-                document.querySelector('#winner').style.color = '#013801'
+                document.querySelector('#winner').style.color = 'green'
 
                 document.querySelector('#winner').innerHTML = `Parabéns <strong>${winner}</strong>`
             },1500)
