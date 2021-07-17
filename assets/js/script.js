@@ -19,6 +19,11 @@ let app = new Vue ({
                 document.querySelector('#winner').innerHTML = `Parabéns <strong>${winner}</strong>`
             },1500)
             
+        },
+        reset:function(){
+            document.querySelector('#winner').innerHTML = 'Ganhador: '
+
+            document.querySelector('#winner').style.color = '#000'
         }
     },
 })
