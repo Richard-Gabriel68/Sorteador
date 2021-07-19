@@ -7,6 +7,7 @@ let app = new Vue ({
     methods: {
         add:function(){
             this.lista.push(this.nome)
+            this.nome = ''
         },
         sort:function(){
             winner = this.lista[Math.floor(Math.random() * this.lista.length)]
