@@ -47,6 +47,20 @@ body {
         background-color: #fff9e6;
         margin-bottom: 0.2rem;
     }
+    .clear {
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+        background-color: grey;
+        font-weight: bold;
+        font-size: 25px;
+        position: fixed;
+        bottom: 1rem;
+        right: 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 }
 
 

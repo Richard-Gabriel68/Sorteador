@@ -3,10 +3,17 @@ let app = new Vue ({
     data: {
         nome: '',
         lista: [],
+        listaD: []
+    },
+    mounted() {
+        this.lista = localStorage.pessoa.split(',')
+        this.listaD = localStorage.pessoa.split(',')
     },
     methods: {
         add:function(){
             this.lista.push(this.nome)
+            localStorage.pessoa = this.lista
+            this.listaD = localStorage.pessoa.split(',')
         },
         sort:function(){
             winner = this.lista[Math.floor(Math.random() * this.lista.length)]
@@ -24,6 +31,10 @@ let app = new Vue ({
             document.querySelector('#winner').innerHTML = 'Ganhador: '
 
             document.querySelector('#winner').style.color = '#000'
+        },
+        clear:function(){
+            localStorage.removeItem('pessoa')
+            this.listaD = []
         }
     },
 })

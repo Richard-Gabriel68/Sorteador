@@ -15,17 +15,18 @@
         <img src="assets/img/jr3.png" >
         <input type="text" v-model="nome">
         <label >
-            <button @click="add">Add</button>
+            <button @click="add(nome)">Add</button>
             <button @click="sort">Sortear</button>
         </label>
     
         <div id="winner" @click="reset">Ganhador: </div>
 
         <ul>
-            <li v-for="item in lista"> {{ item }} </li>
+            <li v-for="item in listaD"> {{ item }} </li>
         </ul>
 
-        <span> {{ lista.length }}</span>
+        <div class="clear" @click="clear">*</div>
+        <span> {{ listaD.length }}</span>
     </div>
 
     <script src="assets/js/script.js"></script>
