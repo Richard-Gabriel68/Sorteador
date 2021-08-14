@@ -1,0 +1,1 @@
+Resolvi criar esta aplicação para ajudar minha mãe em um sorteio, fiz questão de que fosse especialmente personalizado para ela (porque sorteadores genéricos com certeza não faltam rsrs). Me dei um prazo de menos de 2.30 horas para conclui-lo, depois de um tempo acrescentei localstorage para resolver eventuais problemas.
